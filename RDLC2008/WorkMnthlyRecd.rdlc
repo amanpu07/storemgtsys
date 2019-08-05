@@ -1,0 +1,615 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSources>
+    <DataSource Name="cn">
+      <rd:DataSourceID>3498879e-045a-4a1b-803d-df428035fa03</rd:DataSourceID>
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+    </DataSource>
+  </DataSources>
+  <InteractiveHeight>29.7cm</InteractiveHeight>
+  <rd:DrawGrid>true</rd:DrawGrid>
+  <InteractiveWidth>21cm</InteractiveWidth>
+  <rd:GridSpacing>0.25cm</rd:GridSpacing>
+  <rd:SnapToGrid>true</rd:SnapToGrid>
+  <RightMargin>2.5cm</RightMargin>
+  <LeftMargin>2.5cm</LeftMargin>
+  <BottomMargin>2.5cm</BottomMargin>
+  <rd:ReportID>9b88aa3e-9848-4bac-b471-cb90f83f91b2</rd:ReportID>
+  <EmbeddedImages>
+    <EmbeddedImage Name="rptpstcllogo">
+      <MIMEType>image/jpeg</MIMEType>
+      <ImageData>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</ImageData>
+    </EmbeddedImage>
+  </EmbeddedImages>
+  <PageWidth>21cm</PageWidth>
+  <DataSets>
+    <DataSet Name="monthlyrecdissued_monthlyrecdwork">
+      <Fields>
+        <Field Name="storename">
+          <DataField>storename</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="nameofwork">
+          <DataField>nameofwork</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="subdivision">
+          <DataField>subdivision</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="divisionreturnchange">
+          <DataField>divisionreturnchange</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="storechallanno">
+          <DataField>storechallanno</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="srwchallandate">
+          <DataField>srwchallandate</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="grbookno">
+          <DataField>grbookno</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="grpageno">
+          <DataField>grpageno</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="grdate">
+          <DataField>grdate</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="Column1">
+          <DataField>Column1</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="Column2">
+          <DataField>Column2</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="grandtotal">
+          <DataField>grandtotal</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>cn</DataSourceName>
+        <CommandType>StoredProcedure</CommandType>
+        <CommandText>dbo.monthlyrecdwork</CommandText>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+      <rd:DataSetInfo>
+        <rd:DataSetName>monthlyrecdissued</rd:DataSetName>
+        <rd:TableName>monthlyrecdwork</rd:TableName>
+        <rd:TableAdapterName>monthlyrecdworkTableAdapter</rd:TableAdapterName>
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
+  <Width>30.53241cm</Width>
+  <Body>
+    <ColumnSpacing>1cm</ColumnSpacing>
+    <ReportItems>
+      <Textbox Name="textbox9">
+        <Top>5.09127cm</Top>
+        <Style>
+          <TextAlign>Right</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>4</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>25.28241cm</Left>
+        <Value>="Print Date : " &amp; Format(system.DateTime.Now(),"dd-MM-yyyy")</Value>
+      </Textbox>
+      <Table Name="table1">
+        <ZIndex>3</ZIndex>
+        <DataSetName>monthlyrecdissued_monthlyrecdwork</DataSetName>
+        <Top>1.76455cm</Top>
+        <Details>
+          <TableRows>
+            <TableRow>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox4">
+                      <rd:DefaultName>textbox4</rd:DefaultName>
+                      <Style>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>=RowNumber(nothing)</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox5">
+                      <rd:DefaultName>textbox5</rd:DefaultName>
+                      <Style>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <TextAlign>Left</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!nameofwork.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox8">
+                      <rd:DefaultName>textbox8</rd:DefaultName>
+                      <Style>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <TextAlign>Left</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!subdivision.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="storename">
+                      <rd:DefaultName>storename</rd:DefaultName>
+                      <Style>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!storechallanno.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox16">
+                      <rd:DefaultName>textbox16</rd:DefaultName>
+                      <Style>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Format(Fields!srwchallandate.Value,"dd-MM-yyyy")</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox20">
+                      <rd:DefaultName>textbox20</rd:DefaultName>
+                      <Style>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!grpageno.Value &amp; "/" &amp; Fields!grbookno.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox24">
+                      <rd:DefaultName>textbox24</rd:DefaultName>
+                      <Style>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Format(Fields!grdate.Value,"dd-MM-yyyy")</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox28">
+                      <rd:DefaultName>textbox28</rd:DefaultName>
+                      <Style>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <TextAlign>Right</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!grandtotal.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+              <Height>0.66667cm</Height>
+            </TableRow>
+          </TableRows>
+        </Details>
+        <Header>
+          <TableRows>
+            <TableRow>
+              <TableCells>
+                <TableCell>
+                  <ColSpan>8</ColSpan>
+                  <ReportItems>
+                    <Textbox Name="textbox1">
+                      <rd:DefaultName>textbox1</rd:DefaultName>
+                      <Style>
+                        <BackgroundColor>Silver</BackgroundColor>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <FontWeight>700</FontWeight>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>="Material Received from :  " &amp; "Work" &amp; " - from Dated " &amp; Format(Fields!Column1.Value,"dd-MM-yyyy") &amp; " to " &amp; Format(Fields!Column2.Value,"dd-MM-yyyy")</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+              <Height>0.66667cm</Height>
+            </TableRow>
+            <TableRow>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox2">
+                      <rd:DefaultName>textbox2</rd:DefaultName>
+                      <Style>
+                        <BackgroundColor>Gainsboro</BackgroundColor>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <FontWeight>700</FontWeight>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>Sr.No.</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox3">
+                      <rd:DefaultName>textbox3</rd:DefaultName>
+                      <Style>
+                        <BackgroundColor>Gainsboro</BackgroundColor>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <FontWeight>700</FontWeight>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>Source (Work) Name</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox7">
+                      <rd:DefaultName>textbox7</rd:DefaultName>
+                      <Style>
+                        <BackgroundColor>Gainsboro</BackgroundColor>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <FontWeight>700</FontWeight>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>Name of Sub-Div</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox6">
+                      <rd:DefaultName>textbox6</rd:DefaultName>
+                      <Style>
+                        <BackgroundColor>Gainsboro</BackgroundColor>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <FontWeight>700</FontWeight>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>SRW No.</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox12">
+                      <rd:DefaultName>textbox12</rd:DefaultName>
+                      <Style>
+                        <BackgroundColor>Gainsboro</BackgroundColor>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <FontWeight>700</FontWeight>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>SRW Date</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox13">
+                      <rd:DefaultName>textbox13</rd:DefaultName>
+                      <Style>
+                        <BackgroundColor>Gainsboro</BackgroundColor>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <FontWeight>700</FontWeight>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>GR No.</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox14">
+                      <rd:DefaultName>textbox14</rd:DefaultName>
+                      <Style>
+                        <BackgroundColor>Gainsboro</BackgroundColor>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <FontWeight>700</FontWeight>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>GR Date</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox15">
+                      <rd:DefaultName>textbox15</rd:DefaultName>
+                      <Style>
+                        <BackgroundColor>Gainsboro</BackgroundColor>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <FontWeight>700</FontWeight>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+              <Height>0.63492cm</Height>
+            </TableRow>
+          </TableRows>
+        </Header>
+        <TableColumns>
+          <TableColumn>
+            <Width>1.5cm</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>7.75cm</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>6.25cm</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>2.75cm</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>2.75cm</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>3cm</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>2.77645cm</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>3.75cm</Width>
+          </TableColumn>
+        </TableColumns>
+        <Height>2.63493cm</Height>
+        <Footer>
+          <TableRows>
+            <TableRow>
+              <TableCells>
+                <TableCell>
+                  <ColSpan>7</ColSpan>
+                  <ReportItems>
+                    <Textbox Name="storename_1">
+                      <rd:DefaultName>storename_1</rd:DefaultName>
+                      <Style>
+                        <BackgroundColor>Silver</BackgroundColor>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <TextAlign>Right</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>Total</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox29">
+                      <rd:DefaultName>textbox29</rd:DefaultName>
+                      <Style>
+                        <BackgroundColor>Silver</BackgroundColor>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Sum(Fields!grandtotal.Value)</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+              <Height>0.66667cm</Height>
+            </TableRow>
+          </TableRows>
+        </Footer>
+      </Table>
+      <Textbox Name="textbox11">
+        <Top>0.99095cm</Top>
+        <Width>28.94709cm</Width>
+        <Style>
+          <FontWeight>700</FontWeight>
+          <TextAlign>Center</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>2</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>1.55291cm</Left>
+        <Height>0.63492cm</Height>
+        <Value>="Store : " &amp; First(Fields!storename.Value, "monthlyrecdissued_monthlyrecdwork")</Value>
+      </Textbox>
+      <Image Name="image1">
+        <Sizing>Fit</Sizing>
+        <Top>0.12322cm</Top>
+        <Width>1.41521cm</Width>
+        <MIMEType>image/jpeg</MIMEType>
+        <Source>Embedded</Source>
+        <Style />
+        <ZIndex>1</ZIndex>
+        <Height>1.52604cm</Height>
+        <Value>rptpstcllogo</Value>
+      </Image>
+      <Textbox Name="textbox10">
+        <Top>0.2674cm</Top>
+        <Width>28.94709cm</Width>
+        <Style>
+          <FontSize>12pt</FontSize>
+          <FontWeight>700</FontWeight>
+          <TextAlign>Center</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Left>1.55291cm</Left>
+        <Height>0.63492cm</Height>
+        <Value>PUNJAB STATE TRANSMISSION CORPORATION LIMITED</Value>
+      </Textbox>
+    </ReportItems>
+    <Height>5.84127cm</Height>
+  </Body>
+  <Language>en-US</Language>
+  <TopMargin>2.5cm</TopMargin>
+  <PageHeight>29.7cm</PageHeight>
+</Report>
